@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Sample
+{    
+    
+   int add(int a, int b)
+   {
+     System.out.println("a:"+a+" "+"b:"+b);
+     return a+b;
+   }
+   int sub(int a, int b)
+   {
+     System.out.println("a:"+a+" "+"b:"+b);
+     return a-b;
+   }
+   int mul()
+   {
+     int sum=add();
+     int difference=sub();
+     return sum*difference;
+   }
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    Sample obj=new Sample();
+    System.out.println(obj.mul(sc.nextInt(),sc.nextInt());
+  }
+}  
+
+     

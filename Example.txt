@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Example
+{
+  static Scanner sc=new scanner(System.in);
+  void m1(String a)
+  {
+   System.out.println(a);
+  }
+  void m2(Boolean a)
+  {
+   System.out.println(a);
+   System.out.println(m1(sc.next()));
+  }
+ public static void main(String[] args)
+{
+  System.out.println(m2(sc.nextBoolean()));
+  
+}
