@@ -1,3 +1,4 @@
+//this at all level
 import java.util.Scanner;
 class This4
 {
@@ -6,7 +7,7 @@ class This4
    void m1(int a)
    {
      System.out.print(this.a+" "+a);
-     this.m2(sc.next().charAt(0));
+     this.m1(sc.next().charAt(0));
    }
    void m1(char ch)
    {
@@ -14,18 +15,18 @@ class This4
    }
    This4(Boolean a)
    {
-     System.out.println(a);
-     System.out.println(this.a);
+     this(sc.nextInt());
+     System.out.println(a);     
    }
    This4(int a)
-   {
-      System.out.println(a);
+   { 
+      
       System.out.println(this.a);
+      System.out.println(a);
    }
    public static void main(String[] args)
    {
-      This4 obj=new This4();
-      obj.This4i((sc.nextLong()));
+      This4 obj=new This4(sc.nextBoolean());
       obj.m1(sc.nextInt());
    }
 }

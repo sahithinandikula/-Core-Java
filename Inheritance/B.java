@@ -5,6 +5,7 @@ class A{
         int n=90;
         System.out.println(this.n);
     }
+    
     A(int a)
     {
         System.out.println(a);

@@ -1,3 +1,4 @@
+//this at variable level
 import java.util.Scanner;
 class This1
 {
