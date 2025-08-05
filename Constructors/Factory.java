@@ -5,7 +5,7 @@ class Factory
   static int m1(char a)
   {
     System.out.print(a);
-    System.out.print(new Factory().m2(sc.nextInt()));
+    System.out.print(new Factory().m2(sc.nextInt())); //without using object calling m2 method
     return sc.nextInt();
   }
   Boolean m2(int a)

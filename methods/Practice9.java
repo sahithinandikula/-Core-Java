@@ -19,7 +19,7 @@ class Practice9
   }
   public static void main(String[] args)
   {
-    System.out.println(new Practice9().m2(m1(sc.nextBoolean()c)));
+    System.out.println(new Practice9().m2(m1(sc.nextBoolean())));
   }
 }
 

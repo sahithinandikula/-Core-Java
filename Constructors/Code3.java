@@ -1,3 +1,5 @@
+//Create a Java Application where we have one static variable integer, two non-static variables Boolean and double, one non static method with parameter char and returns long value, a default constructor and a parameterized constructor. then invoke all the properties under main by providing dynamic inputs
+
 import java.util.Scanner;
 class Code3
 {

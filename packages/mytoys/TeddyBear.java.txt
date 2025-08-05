@@ -1,0 +1,9 @@
+package mytoys;
+
+public class TeddyBear
+{
+  public void fun()
+  {
+    System.out.println("You have a teddy bear");
+  }
+}

@@ -1,0 +1,147 @@
+import java.util.Scanner;
+interface A1
+{
+   String m1(int a);
+   default short m2(float f)
+   {
+     System.out.println(f);
+     return sc.nextShort();
+   }
+}
+interface A2
+{
+   Boolean m3(double d);
+   static char long m4(String s)
+   {
+     System.out.println(s);
+     return sc.next().charAt(0);
+   }
+}
+interface A3
+{
+   long m5(short s);
+   default String m6(int a)
+   {
+     System.out.println(a);
+     return sc.next();
+   }
+}
+abstract class Abs implements  A1,A2,A3
+{
+   abstract float m7(String s);
+   int m8(char a)
+   {
+     System.out.println(a);
+     return sc.nextInt();
+   }
+   Abs(float f)
+   {
+     System.out.println(f);
+   }
+}
+class Concrete1 extends Abs
+{
+   public String m1(int a)
+   {
+     System.out.println(a);
+     return sc.next();
+   }
+   public Boolean m3(double d)
+   {
+     System.out.println(d);
+     return sc.nextBoolean();
+   }
+   public long m5(short s)
+   {
+     System.out.println(s);
+     return sc.nextLong();
+   } 
+   float m7(String s)
+   {
+      System.out.println(s);
+      return sc.nextFloat();
+   }
+   Concrete1(float f)
+   {
+     super(f);
+   }
+}
+class Concrete2 extends Abs
+{
+   public String m1(int a)
+   {
+     System.out.println(a);
+     return sc.next();
+   }
+   public Boolean m3(double d)
+   {
+     System.out.println(d);
+     return sc.nextBoolean();
+   }
+   public long m5(short s)
+   {
+     System.out.println(s);
+     return sc.nextLong();
+   } 
+   float m7(String s)
+   {
+      System.out.println(s);
+      return sc.nextFloat();
+   }
+    Concrete2(float f)
+   {
+     super(f);
+   }
+}
+class Concrete3 extends Abs
+{
+   public String m1(int a)
+   {
+     System.out.println(a);
+     return sc.next();
+   }
+   public Boolean m3(double d)
+   {
+     System.out.println(d);
+     return sc.nextBoolean();
+   }
+   public long m5(short s)
+   {
+     System.out.println(s);
+     return sc.nextLong();
+   } 
+   float m7(String s)
+   {
+      System.out.println(s);
+      return sc.nextFloat();
+   }
+   Concrete3(float f)
+   {
+     super(f);
+   }
+}
+class Test
+{
+  public static void main()
+  {
+    new Test().invoke();
+  }
+   void invoke()
+   {
+     Concrete3 obj=new Concrete3(sc.nextFloat());
+     System.out.println(obj.m1(sc.nextInt())); 
+     System.out.println(obj.m2(sc.nextFloat()));
+     System.out.println(obj.m3(sc.nextDouble())); 
+     System.out.println(obj.m4(sc.next()));
+     System.out.println(obj.m5(sc.nextShort()));
+     System.out.println(obj.m6(sc.nextInt()));
+     System.out.println(obj.m7(sc.next()));
+     System.out.println(obj.m8(sc.next().charAt(0)));
+   }
+}
+   
+
+  
+   
+  
+   

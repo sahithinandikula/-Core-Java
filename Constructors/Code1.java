@@ -1,3 +1,4 @@
+//create a java application that has a non static variable,a static variable,a constructor and a non sratic method.call the constructor and method m1 in the main method 
 import java.util.Scanner;
 class Code1
 {
